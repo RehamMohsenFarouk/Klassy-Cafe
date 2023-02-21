@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat+Alternates&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+
+
+<body>
+  
+  <!-- navbar -->
+<header>
+  <nav class="navbar navbar-expand-lg fixed-top bg-white">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/klassy-logo.png" class="w-100" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto text-center ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#menu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Menu
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#menu">Breakfast</a></li>
+              <li><a class="dropdown-item" href="#menu">Lunch</a></li>
+              <!-- <li><hr class="dropdown-divider"></li> -->
+              <li><a class="dropdown-item" href="#menu">Dinner</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#chefs">Chefs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactus">Contact Us</a>
+          </li>
+          
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success " type="submit"
+          data-bs-toggle="tooltip" data-bs-placement="bottom"
+        data-bs-custom-class="custom-tooltip"
+        title="Search In Our Menu" >Search</button> 
+        
+          <button class="btn btn-outline-success ms-2 tt" type="button" data-bs-toggle="modal" data-bs-target="#login"
+          data-bs-placement="bottom"
+        data-bs-custom-class="custom-tooltip"
+        title="Login To Make A Reservation">Login</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+  <!-- login modal -->
+
+<div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-2">
+            <label for="recipient-email" class="col-form-label h6">Email Address:</label>
+            <input type="text" class="form-control" id="recipient-email">
+            <label for="recipient-email" class="col-form-label label-login">We'll never share your email with anyone else.</label>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="col-form-label h6">Password:</label>
+            <input type="text" class="form-control" id="password">
+          </div>
+
+          <div class="form-check form-switch mb-3">
+            <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes" checked>
+            <label class="form-check-label" for="mySwitch">Remember Me</label>
+          </div>
+          <button type="button" class="btn btn-outline-success">Login</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- home -->
+
+<main id="home" class="">
+  <div class="row g-0">
+    
+    <div class="col-md-4">
+      <div class="home-content">
+        <div class="text-white home-text text-center">
+          <h1>KlassyCafe</h1>
+          <h6>THE BEST EXPERIENCE</h6>
+          <button type="button" class="btn reservation-btn tt" data-bs-placement="bottom"
+          data-bs-custom-class="custom-tooltip1"
+          title="Login To Make A Reservation">Make A Reservation</button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="col-md-8 ">
+      <div class="home-corsor ">
+
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+         <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/slide-01.jpg" alt="Los Angeles" class="d-block w-100 ">
+          <div class="carousel-caption">
+          <h3>Breakfast</h3>
+          <p>Start your day with light and special Breakfast</p>
+          </div>
+        </div>
+
+ 
+        <div class="carousel-item">
+           <img src="images/slide-02.jpg" alt="Chicago" class="d-block w-100 ">
+              <div class="carousel-caption">
+                 <h3>Lunch</h3>
+                 <p>You Must Try Our Lunch This Week</p>
+              </div>
+         </div>
+        <div class="carousel-item">
+           <img src="images/slide-03.jpg" alt="New York" class="d-block w-100 ">
+              <div class="carousel-caption">
+                <h3>Dinner</h3>
+                <p>End Your Day With Our Delicious Dinner</p>
+              </div>
+        </div>
+      </div>
+
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+        
+      </div>
+    </div>
+
+  </div>
+</main>
+
+
+<!-- about -->
+
+<section id="about" class="mt" >
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-md-6">
+
+        <div class="about-content">
+          <h2 class="sections-header">ABOUT US</h2>
+          <h3 class="sections-h3">We Leave A Delicious <br> Memory For You</h3>
+        
+          <!--accordion-->
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  About the cafe
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body overflow-auto">
+                  <img src="images/tab-item-01.png" class="float-start accordion-body-img" alt="">
+                 <p class="float-end accordion-body-p ">This cafe contains a lot of services that help you to rest and relax. Once you enter the place, you feel joy and find the place very comfortable. It contains screens so that you can enjoy watching TV while drinking coffee.</p> 
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  About Our Menu
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body overflow-auto">
+                  <img src="images/tab-item-03.png" class="float-start accordion-body-img" alt="">
+                 <p class="float-end accordion-body-p ">This cafe contains a lot of services that help you to rest and relax. Once you enter the place, you feel joy and find the place very comfortable. It contains screens so that you can enjoy watching TV while drinking coffee.</p> 
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  About Our Chefs
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body overflow-auto">
+                  <img src="images/tab-item-06.png" class="float-start accordion-body-img" alt="">
+                 <p class="float-end accordion-body-p ">This cafe contains a lot of services that help you to rest and relax. Once you enter the place, you feel joy and find the place very comfortable. It contains screens so that you can enjoy watching TV while drinking coffee.</p> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <img src="images/about-video-bg.jpg" class="w-100" alt="">
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- menu -->
+
+<section id="menu" class="mt" >
+  <div class="for-bg">
+  <div class="container">
+    <div class="menu-header">
+      <h2 class="sections-header">OUR MENU</h2>
+      <h3 class="sections-h3">Our selection of cakes  <br> with quality taste</h3>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-md-3">
+        <div class="menu-content">
+          <div class="card" >
+            <img src="images/menu1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Blueberry Tart </h5>
+              <p class="card-text">This variety is so delicious that you will taste it and want to eat it again</p>
+              <a href="#" class="btn btn-secondary">Order Now</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="menu-content">
+          <div class="card" >
+            <img src="images/menu2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pancake</h5>
+              <p class="card-text">This variety is so delicious that you will taste it and want to eat it again</p>
+              <a href="#" class="btn btn-secondary">Order Now</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="menu-content">
+          <div class="card" >
+            <img src="images/menu3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Blueberry Cheesecake</h5>
+              <p class="card-text">This variety is so delicious that you will taste it and want to eat it again</p>
+              <a href="#" class="btn btn-secondary">Order Now</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="menu-content">
+          <div class="card" >
+            <img src="images/menu4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Lotus Cheesecake</h5>
+              <p class="card-text">This variety is so delicious that you will taste it and want to eat it again</p>
+              <a href="#" class="btn btn-secondary">Order Now</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="menu-content">
+          <div class="card" >
+            <img src="images/menu5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Chocolate Cake</h5>
+              <p class="card-text">This variety is so delicious that you will taste it and want to eat it again</p>
+              <a href="#" class="btn btn-secondary">Order Now</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="menu-content">
+          <div class="card" >
+            <img src="images/menu6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Macron</h5>
+              <p class="card-text">This variety is so delicious that you will taste it and want to eat it again</p>
+              <a href="#" class="btn btn-secondary">Order Now</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="menu-content">
+          <div class="card" >
+            <img src="images/menu7.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Cup Cake</h5>
+              <p class="card-text">This variety is so delicious that you will taste it and want to eat it again</p>
+              <a href="#" class="btn btn-secondary">Order Now</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="menu-content">
+          <div class="card" >
+            <img src="images/menu8.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Lemon Tart </h5>
+              <p class="card-text">This variety is so delicious that you will taste it and want to eat it again</p>
+              <a href="#" class="btn btn-secondary">Order Now</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- award -->
+
+<section id="award" class="" >
+  <div class="for-bg-img">
+  <div class="container">
+    <div class="row g-4 ">
+
+      <div class="col-md-3">
+        <div class="award-content text-center text-white">
+          <i class="fas fa-users fa-3x award-icon"></i>
+          <h3 class="my-2">5000</h3>
+          <p>Team members</p>
+
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="award-content text-center text-white">
+          <i class="fas fa-trophy fa-3x award-icon"></i>
+          <h3 class="my-2">350</h3>
+          <p>Awards Won</p>
+
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="award-content text-center text-white">
+          <i class="fas fa-user fa-3x award-icon"></i>
+          <h3 class="my-2">300k</h3>
+          <p>Happy Clients</p>
+
+        </div>
+      </div>
+
+
+      <div class="col-md-3">
+        <div class="award-content text-center text-white">
+          <i class="fa-solid fa-utensils fa-3x award-icon"></i>
+          <h3 class="my-2">1200</h3>
+          <p>Special Recipes</p>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- chefs -->
+
+<section id="chefs" class="mt2 mb" >
+  
+  <div class="container">
+    <div class="chefs-header">
+      <h2 class="sections-header ">OUR CHEFS</h2>
+      <h3 class="sections-h3">We offer the best <br>ingredients for you</h3>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="chefs-content">
+          <div class="card" >
+            <div class="chef-img position-relative">
+            <img src="images/chefs-01.jpg" class="card-img-top" alt="...">
+            <div class="img-overlay text-center position-absolute top-0 start-0 end-0 bottom-0 d-flex justify-content-center align-items-center">
+              <div class="">
+              <i class="fa-brands fa-facebook-square fa-3x chefs-icons"></i>
+              <i class="fa-brands fa-twitter-square fa-3x chefs-icons mx-4"></i>
+              <i class="fa-brands fa-youtube-square fa-3x chefs-icons"></i>
+             </div>
+            </div>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title chef-name">Randy Walker</h5>
+              <p class="card-text">Pastry Chef</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="chefs-content">
+          <div class="card" >
+            <div class="chef-img position-relative">
+            <img src="images/chefs-02.jpg" class="card-img-top" alt="...">
+            <div class="img-overlay text-center position-absolute top-0 start-0 end-0 bottom-0 d-flex justify-content-center align-items-center">
+              <div class="">
+              <i class="fa-brands fa-facebook-square fa-3x chefs-icons"></i>
+              <i class="fa-brands fa-twitter-square fa-3x chefs-icons mx-4"></i>
+              <i class="fa-brands fa-youtube-square fa-3x chefs-icons"></i>
+             </div>
+            </div>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title chef-name">David Martin</h5>
+              <p class="card-text">Cookie Chef</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="chefs-content">
+          <div class="card" >
+            <div class="chef-img position-relative">
+            <img src="images/chefs-03.jpg" class="card-img-top" alt="...">
+            <div class="img-overlay text-center position-absolute top-0 start-0 end-0 bottom-0 d-flex justify-content-center align-items-center">
+              <div class="">
+              <i class="fa-brands fa-facebook-square fa-3x chefs-icons"></i>
+              <i class="fa-brands fa-twitter-square fa-3x chefs-icons mx-4"></i>
+              <i class="fa-brands fa-youtube-square fa-3x chefs-icons"></i>
+             </div>
+            </div>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title chef-name">Peter Perkson</h5>
+              <p class="card-text">Pancake Chef</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- contact us -->
+
+<section id="contactus" class="mt-5" >
+  <div class="for-bg-img">
+  <div class="container">
+    <div class="contactus-header">
+      <h2 class="sections-header text-white">CONTACT US</h2>
+      <h3 class="sections-h3 text-white">Contact Us For Make A Reservation <br>Or Just walkin to our cafe</h3>
+    </div>
+    <div class="row g-5  mt-2 mb-5">
+
+      <div class="col-lg-3 col-md-6">
+        <div class="contact-content ">
+          <div class="bg-white rounded position-relative text-center p-4 pt-5">
+             <div class="icons d-flex justify-content-center align-items-center rounded-circle position-absolute ">
+              <i class="fas fa-phone fa-xl text-white "></i>
+             </div>
+             <h5 class="fw-bolder mb-2">Phone Numbers</h5>
+             <div class="mb-1">99755432345</div>
+             <div>99636354645</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 ">
+        <div class="contact-content ">
+          <div class="bg-white rounded position-relative text-center p-4 pt-5">
+             <div class="icons d-flex justify-content-center align-items-center rounded-circle position-absolute ">
+              <i class="fas fa-envelope fa-xl text-white "></i>
+             </div>
+             <h5 class="fw-bolder mb-2">Emails</h5>
+             <div class="mb-1">hello@company.com</div>
+             <div>hello@company.com</div>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col-lg-3 col-md-6">
+        <div class="contact-content ">
+          <div class="bg-white rounded position-relative text-center p-4 pt-5">
+             <div class="icons d-flex justify-content-center align-items-center rounded-circle position-absolute ">
+              <i class="fas fa-location-dot fa-xl text-white "></i>
+             </div>
+             <h5 class="fw-bolder mb-2">Address</h5>
+             <div class="mb-1">25 High Street London</div>
+             <div>373 The Drive London</div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-lg-3 col-md-6">
+        <div class="contact-content ">
+          <div class="bg-white rounded position-relative text-center p-4 pt-5">
+             <div class="icons d-flex justify-content-center align-items-center rounded-circle position-absolute ">
+              <i class="fas fa-envelope-open-text fa-xl text-white "></i>
+             </div>
+             <h5 class="fw-bolder mb-2">Fax</h5>
+             <div class="mb-1">98765434322</div>
+             <div>98345673341</div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  </div>
+</section>
+
+
+
+<!-- footer -->
+
+  <footer id="footer" class="" >
+    <div class="for-bg2 ">
+    <div class="container">
+
+      <div class="row g-3 py-4 ">
+  
+        <div class="col-md-4 order-1 order-md-0 d-flex justify-content-center align-items-center ">
+          <div class="footer-content d-flex justify-content-evenly w-75 align-items-center">
+            <div class="icons2 d-flex justify-content-center align-items-center rounded-circle  ">
+              <i class="fa-brands fa-facebook-f fa-xl footer-icons"></i>
+             </div>
+
+             <div class="icons2 d-flex justify-content-center align-items-center rounded-circle  ">
+              <i class="fa-brands fa-twitter fa-xl footer-icons"></i>
+             </div>
+
+             <div class="icons2 d-flex justify-content-center align-items-center rounded-circle  ">
+              <i class="fa-brands fa-instagram fa-xl footer-icons"></i>
+             </div>
+
+             <div class="icons2 d-flex justify-content-center align-items-center rounded-circle  ">
+              <i class="fa-brands fa-pinterest fa-xl footer-icons"></i>
+             </div>
+          </div>
+         
+        </div>
+
+
+        <div class="col-md-4 ">
+          <div class="text-center">
+          <img src="images/white-logo.png"  class="footer-img " alt="">
+         </div>
+        </div>
+
+        <div class="col-md-4 mb-4 order-1 order-md-0">
+          <div class="text-center text-white">
+          <span class="footer-copywrite">Copyright © 2023 Klassy Cafe . All Rights Reserved Reham Mohsen.</span>
+         </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </footer>
+  
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      
+  
+  <script src="js/main.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    const tooltips= document.querySelectorAll(".tt")
+    tooltips.forEach(t=>{
+      new bootstrap.Tooltip(t)
+    })
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  </script>
+  <script src="js/all.min.js"></script>
+</body>
+</html>
